@@ -130,10 +130,3 @@ def multiRemove():
     while index < count:
         remove()
         index += 1
-
-
-getall()
-multiAdd()
-multiRemove()
-giveStudentNumber()
-getall()
