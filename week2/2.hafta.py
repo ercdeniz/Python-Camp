@@ -131,9 +131,3 @@ def multiRemove():
         remove()
         index += 1
 
-
-getall()
-multiAdd()
-multiRemove()
-giveStudentNumber()
-getall()
