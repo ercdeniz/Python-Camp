@@ -1,0 +1,5 @@
+URL = "https://www.saucedemo.com/"
+emptyUsernamePasword = "Epic sadface: Username is required"
+emptyPasword = "Epic sadface: Password is required"
+lockedUser = "Epic sadface: Sorry, this user has been locked out."
+completeHeader = "Thank you for your order!"

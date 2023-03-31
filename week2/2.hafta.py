@@ -130,4 +130,7 @@ def multiRemove():
     while index < count:
         remove()
         index += 1
+<<<<<<< HEAD
 
+=======
+>>>>>>> e4d493d7ad943ce5edefc6151cf83a37fc8908fc
