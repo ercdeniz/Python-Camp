@@ -119,19 +119,21 @@ class Test_Swag_labs:
         # hata ikonlarının sayısını kontrol et
         numOfIcon = len(icons)
         assert numOfIcon == 2
-        # diziyi sıfırla
-        icons.clear()
-        numOfIcon = len(icons)
         # hata ikonlarını kapat
         self.waitForElementVisible((By.CLASS_NAME, "error-button"))
         errMessageClose = self.driver.find_element(
             By.CLASS_NAME, "error-button")
         errMessageClose.click()
+        # ikonları tekrar ara
+        icons = self.driver.find_elements(By.CLASS_NAME, "error_icon")
         # ekran görüntüsü al
         self.driver.save_screenshot(
             f"{self.folderPath}/test_icon_x.png")
         # hata ikonlarının sayısını tekrar kontrol et
-        assert numOfIcon == 0
+        if not icons:
+            assert True
+        else:
+            assert False
 
     # teste parametreleri kaynak dosyasından gönder
     @pytest.mark.parametrize("username,password", getData("standard_user"))
