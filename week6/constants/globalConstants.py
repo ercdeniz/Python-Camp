@@ -1,0 +1,8 @@
+URL = "https://www.saucedemo.com/"
+productPageURL = "https://www.saucedemo.com/inventory.html"
+cartPageURL = "https://www.saucedemo.com/cart.html"
+emptyUsernamePasword = "Epic sadface: Username is required"
+emptyPasword = "Epic sadface: Password is required"
+lockedUser = "Epic sadface: Sorry, this user has been locked out."
+completeHeader = "Thank you for your order!"
+checkoutErrorMessage = "Error: First Name is required"
